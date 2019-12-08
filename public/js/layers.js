@@ -21,3 +21,11 @@ export const createBackgroundLayer = (backgrounds, sprites) => {
     };
     return drawBackgroundLayer;
 };
+
+export const createSpriteLayer = (entity) => {
+    const drawSpriteLayer = (context) => {
+        entity.draw(context)
+
+    }
+    return drawSpriteLayer;
+}
